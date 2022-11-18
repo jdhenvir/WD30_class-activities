@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bookings</h1>
+    </header>
+    <main>
+        <nav>
+            nav
+        </nav>
+        <article>
+            <form>
+                <div class="container">
+                    <div class="form-group-left">
+                        <div class="input-groups">
+                            <label for="fname">FullName</label>
+                            <input type="text" name="fname" id="fname">
+                        </div>
+                        <div class="input-groups">
+                            <label for="phone">Phone</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <div class="input-groups">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input-groups">
+                            <label for="p_date">Pickup Date/Time</label>
+                            <input type="datetime-local" name="p_date" id="p_date">
+                        </div>
+                        <div class="input-groups">
+                            <label for="p_place">Pickup Place</label>
+                            <select name="p_place" id="p_place">
+                                <option disabled selected>   
+                                    Please select
+                                </option>
+                                <option value="1"><p>Here</p></option>
+                                <option value="2">There</option>
+                                <option value="3">Anywhere</option>
+                                <option value="4">Nowhere</option>
+                            </select>
+                        </div>
+                        <div class="input-groups">
+                            <label for="d_place">Dropoff Place</label>
+                            <textarea name="d_place" id="d_place"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group-right">
+                        <div class="input-groups">
+                            <p>Which vehicle do you require?</p>
+                            <input type="radio" name="vehicle" id="van" value="van"/>
+                            <label for="van">Van</label>
+                            <br>
+                            <input type="radio" name="vehicle" id="jeep" value="jeep"/>
+                            <label for="jeep">Jeepney</label>
+                            <br>
+                            <input type="radio" name="vehicle" id="sikad" value="sikad"/>
+                            <label for="sikad">Tricycle</label>
+                        </div>
+                        <div class="input-groups">
+                            <p>Extras</p>
+                            <input type="checkbox" name="bbSeat" id="bbSeat">
+                            <label for="bbSeat">Baby Seat</label>
+                            <br>
+                            <input type="checkbox" name="wheelchair" id="wheelchair">
+                            <label for="wheelchair">Wheelchair Access</label>
+                            <br>
+                            <input type="checkbox" name="stockTip" id="stockTip">
+                            <label for="stockTip">Stock Tip</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="btn-container">
+                        <input type="submit" value="Submit Booking">
+                    </div>
+                </div>
+            </form>
+        </article>
+        <aside>
+            aside
+        </aside>
+    </main>
+    <footer>
+        © Copyright 2022
+    </footer>
+</body>
+</html>

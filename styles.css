@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: #d7dedd;
+    font-family: sans-serif;
+}
+
+header,
+footer {
+    background-color: #1C343A;
+    color: aliceblue;
+    height: calc(10vh);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+main{
+ height: calc(80vh - 40px);
+ display: flex;
+ padding: 20px 20px;
+ gap: 20px;
+ overflow-x: auto;
+}
+
+aside, article, nav {
+    border-radius: 6px;
+    width: 15%;
+    padding: 15px;
+    background-color:#ffffff;
+}
+
+nav {
+    order: 3;
+}
+
+article {
+    width: 70%;  
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.form-group-left {
+    margin: 10px;
+    flex: 1;
+}
+
+.form-group-right {
+    flex-basis: 250px;
+}
+
+.form-group-left>.input-groups{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.form-group-left .input-groups label{
+    flex-basis: 120px;
+}
+
+.form-group-left .input-groups :nth-child(2){
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: solid 0.2px rgb(154, 154, 154);
+}
+
+textarea {
+    resize:vertical;
+    overflow-y: hidden;
+    min-height:50px
+}
+
+.form-group-right input{
+    margin: 0px 0px 10px 20px;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn-container>input{
+    padding: 10px 50px;
+    border-radius: 6px;
+    border: none;
+    background-color: #c4dcd9;
+    font-weight: bold;
+    color: #1C343A;
+}
