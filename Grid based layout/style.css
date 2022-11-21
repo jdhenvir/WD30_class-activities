@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    /* font-family: sans-serif; */
+}
+
+.grid-container {
+    width: 800px;
+    /* height: 600px; */
+    display: grid;
+    grid-template-columns: 1fr 300px 300px;
+    grid-template-rows: 60px 1fr 1fr 2fr 1fr;
+}
+
+.grid-container aside {
+    background-color:#4B5195;
+    grid-row: 1 / span 5;
+    padding: 20px;
+    color: white;
+}
+
+.grid-container>h3,
+.field:has(textarea),
+.field:has(input[type="submit"]){
+    grid-column: 2 / span 2;
+    padding: 10px;
+}
+
+textarea {
+    overflow-y: auto;
+    resize: none;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.field {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    padding: 10px
+}
+
+input {
+    padding: 10px;
+}
+
+input[type="submit"] {
+    flex-grow: 1;
+    border-radius: 8px;
+    border: none;
+    background-color:#4B5195;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+input[type="submit"]:hover {
+    background-color:#555ec1;
+    cursor: pointer;
+}
