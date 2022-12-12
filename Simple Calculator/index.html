@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <script>
+        let tryagain;
+        do{
+            let num1,num2,operator;
+            do{ // a loop for first number input
+                num1 = prompt("Please enter a number: ", 0);
+                num1 = +num1; //convert the number input
+                if(isNaN(num1)){
+                    alert("Please input a valid number!");
+                }
+            }while(isNaN(num1));
+            do{ // a loop for first number input
+                num2 = prompt("Please enter another number: ", 0);
+                num2= +num2; //convert the number input
+                if(isNaN(num2)){
+                    alert("Please input a valid number!");
+                }
+            }while(isNaN(num2));
+
+            do{ // a loop for operator selction
+                operator = prompt("Please choose operator ( +, -, * or /): ");
+                if((operator == "+") || (operator == "-") || (operator == "*") || (operator == "/")){
+                    alert(operation(num1, num2, operator));
+                    break;
+                }
+                else{
+                    alert("Please input ( +, -, * or /) only.");
+                }
+            }while(true);
+
+            tryagain = prompt("Would you like to try again?\nType 'y' to continue:");
+
+        }while(tryagain.toLowerCase() == "y");
+
+        //function operation, parameters: (first operand, second operand, operator of your choice)
+        function operation(x, y, o){
+            let res,operator;
+            if(o === "+"){
+                operator = "Addition";
+                res = x + y;
+            }
+            else if(o === "-"){
+                operator = "Subtraction";
+                res = x - y;
+            }
+            else if(o === "*"){
+                operator = "Multiplication";
+                res = x * y;
+            }
+            else if(o === "/"){
+                operator = "Division";
+                res = x / y;
+            }
+
+            return (operator.toUpperCase() + ":\n" + x + " " + o + " " + y + " = " + res);
+        }
+    </script>
+</body>
+</html>
