@@ -108,18 +108,6 @@ const calculate = ()=> {
     new_entry = true;
 }
 
-function operate(operation) {
-   
-    /* Checking to see if the result have a decimal point if so round it up to two decimal points for better readability else just set operation result to it's original value*/
-    if (operation[0] % 1 !== 0) {
-      operationResult = Math.round(operation[0] * 100) / 100;
-    } else {
-      operationResult = operation[0];
-    }
-    return operationResult;
-  }
-
-
 document.querySelector(".num-btn-grp").addEventListener('click', num_input );
 document.querySelector(".oparators-btn-grp").addEventListener('click', operator_input );
 document.querySelector("#aux-btn-c").addEventListener('click', delete_input );
