@@ -1,9 +1,23 @@
+* {
+    box-sizing: content-box;
+    margin: 0px;
+}
+
+
 .calculator-body{
     background-color: rgb(242, 248, 248);
     border: solid 1px rgb(189, 187, 187);
     border-radius: 10px;
     width: 300px;
     padding: 15px;
+}
+
+.calculator{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .display{
@@ -20,6 +34,8 @@
     color: white;
     font-size: 30px;
     font-family: sans-serif;
+
+    overflow: hidden;
 }
 
 .answer-display{
